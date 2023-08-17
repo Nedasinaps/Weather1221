@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Weather1221</string>
+    <string name="avg_temp">Avg. temperature %s °C</string>
+    <string name="avg_hum">Avg. humidity %s \%%</string>
+    <string name="max_wind">Max wind speed %s km/h</string>
+</resources>

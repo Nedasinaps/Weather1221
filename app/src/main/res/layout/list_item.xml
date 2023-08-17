@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    app:cardBackgroundColor="#55219FDD">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/item_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toStartOf="@+id/item_image"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="16 August 2023" />
+
+        <TextView
+            android:id="@+id/item_condition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toStartOf="@+id/item_image"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/item_max_wind"
+            tools:text="Cloudy" />
+
+        <ImageView
+            android:id="@+id/item_image_avg_temp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:tint="#EF2D2D"
+            app:layout_constraintBottom_toBottomOf="@+id/item_avg_temp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/item_avg_temp"
+            app:srcCompat="@drawable/ic_avg_temp"
+            tools:ignore="UseAppTint" />
+
+        <TextView
+            android:id="@+id/item_avg_temp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/avg_temp"
+            android:textSize="16sp"
+            app:layout_constraintStart_toEndOf="@+id/item_image_avg_temp"
+            app:layout_constraintTop_toBottomOf="@+id/item_date"
+            tools:text="Avg.temperature 100 °C" />
+
+        <ImageView
+            android:id="@+id/item_image_avg_hum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:tint="#2196F3"
+            app:layout_constraintBottom_toBottomOf="@+id/item_avg_hum"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/item_avg_hum"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/ic_avg_hum"
+            tools:ignore="UseAppTint" />
+
+        <TextView
+            android:id="@+id/item_avg_hum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/avg_hum"
+            android:textSize="16sp"
+            app:layout_constraintStart_toEndOf="@+id/item_image_avg_hum"
+            app:layout_constraintTop_toBottomOf="@+id/item_avg_temp"
+            tools:text="Avg. humidity 100 %" />
+
+        <ImageView
+            android:id="@+id/item_image_max_wind"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:tint="#EBF0F4"
+            app:layout_constraintBottom_toBottomOf="@+id/item_max_wind"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/item_max_wind"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/ic_max_wind"
+            tools:ignore="UseAppTint" />
+
+        <TextView
+            android:id="@+id/item_max_wind"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/max_wind"
+            android:textSize="16sp"
+            app:layout_constraintStart_toEndOf="@+id/item_image_max_wind"
+            app:layout_constraintTop_toBottomOf="@+id/item_avg_hum"
+            tools:text="Max wind speed 125 km/h" />
+
+        <ImageView
+            android:id="@+id/item_image"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="8dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:srcCompat="@tools:sample/avatars" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>
